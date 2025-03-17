@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cena Medieval</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Sorteo <span id="dif">II</span> Cena Medieval Solidaria</h1>
+            <h2 class="sub-title">Las mil y una noches</h2>
+        </div>
+    </div>
+    <div id="config" class="config">
+        <h1>Configuracion</h1>
+        <div class="elem">
+            <label name="inferior">Limite inferior: </label>
+            <input max="99999999" min="0" value="0" id="inferior" type="number">
+        </div>
+        <div class="elem">
+            <label name="superior">Limite superior:</label>
+            <input max="99999999" min="0" value="200" id="superior" type="number">
+        </div>
+        <button id="accept">Aceptar</button>
+    </div>
+    <div id="app" class="app">
+        <h1>Numero sorteado: </h1>
+        <h4 id="limits"></h4>
+        <h2 id="number">0000</h2>
+        <div class="slider">
+            <h3>Numeros premiados:</h3>
+            <div class="slider-list-wrapper">
+                <ul id="win-list" class="slider-list">
+                </ul>
+            </div>
+        </div>        
+        <div class="slider-buttons">
+            <button id="prevBtn">&laquo;</button>
+            <button id="nextBtn">&raquo;</button>
+        </div>
+        <div class="buttons">
+            <button id="config-bt">Configurar</button>
+            <button id="generate-bt">Sortear</button>
+            <button id="reboot-bt">Reiniciar</button>
+        </div>
+    </div>
+    <a href="https://www.novaterra.org.es/"><img id="logo" src="Novaterra.png"></a>
+    <script src="app.js"></script>
+</body>
+</html>
