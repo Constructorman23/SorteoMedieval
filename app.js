@@ -110,9 +110,10 @@ generate.addEventListener("click",function () {
         nextBtn.disabled = true
         prevBtn.disabled = true
         animateNumber(() => {
-            number.textContent = random;
+            len = sup.toString().length
+            number.textContent = random.toString().padStart(len, '0')
             let li = document.createElement("li");
-            li.textContent = random;
+            li.textContent = random.toString().padStart(len, '0')
             winList.appendChild(li);
             generate.disabled = false
             configBt.disabled = false
