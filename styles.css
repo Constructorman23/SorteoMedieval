@@ -12,8 +12,6 @@
     font-style: normal;
 }
 
-
-
 body{
     background-image: url("Fondo.jpg");
     background-size: cover;
@@ -26,12 +24,6 @@ body{
 
 #dif{
     font-family: 'MyFont2', sans-serif;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
 .title{
@@ -200,13 +192,27 @@ body{
     margin-bottom: 0;
 }
 
+.position{
+    position: relative;
+}
+
+.slider {
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 10%;
+}
+
 .slider-buttons{
     display: flex;
     align-items: start;
     justify-content: space-between;
     width: 51.5%;
     position: absolute;
-    bottom: 38.5%;
+    bottom: 1.5vh;
     right: 6%;
 }
 
@@ -219,15 +225,7 @@ body{
     cursor: pointer;
 }
 
-.slider {
-    position: relative;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    margin-bottom: 10%;
-}
+
 
 .slider h3 {
     width: 50%;
@@ -376,5 +374,18 @@ button:disabled{
     .config button{
         margin-left: 75%;
         margin-right: 0;
+    }
+}
+
+@media (max-height: 800px) {
+    html, body {
+        overflow-y: auto;
+        height: auto;
+    }
+
+    .app, .config, #logo{
+        position: static;
+        max-height: none;
+        overflow: visible;
     }
 }
