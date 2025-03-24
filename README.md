@@ -1,6 +1,6 @@
 # Sorteo Cena Medieval
 
-**Página web para el sorteo de la rifa de la II Cena Medieval Solidaria** en beneficio de la asociación **Novaterra**.
+**Página web para el sorteo de la rifa de la II Cena Medieval Solidaria** en beneficio de la asociación **[Novaterra](https://www.novaterra.org.es/)** ->
 🔗 [Sorteo Medieval](https://jbdev23.github.io/SorteoMedieval/)  
 
 
