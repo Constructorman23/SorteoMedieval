@@ -1,0 +1,420 @@
+/*General font*/
+@font-face { 
+    font-family: 'MyFont';
+    src: url('/fonts/BerkshireSwash-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Title numbers font*/
+@font-face {
+    font-family: 'MyFont2';
+    src: url('/fonts/bubbleboddyneue-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*General body styles*/
+body{
+    background-image: url("/images/Fondo.jpg"); /*Background image*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'MyFont', sans-serif;
+    color:rgb(255, 255, 255);
+    background-color: #170b0e;
+}
+
+/*Title numbers font*/
+#dif{
+    font-family: 'MyFont2', sans-serif;
+}
+
+/*Title container styles*/
+.title{
+    width: 90%;
+    font-size: 60px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*Title text syle*/
+.title h1{
+    margin-top: 2vh;
+    margin-bottom: 0;
+}
+
+/*Subtitle styles*/
+.sub-title{
+    -webkit-text-stroke: 1px white;
+    color: gold;
+    text-align: right;
+    font-size: 60px;
+    margin-top: 2vh;
+    margin-right: 2.5%;
+}
+
+/*Config styles and position*/
+.config{
+    border-radius: 20px;
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    top: 31%;
+    right: 5%;
+    font-size: 35px;
+    margin-top: 1%;
+}
+
+/*App styles and position*/
+.app{
+    border-radius: 20px;
+    width: 40%;
+    height: 50%;
+    display: block;
+    position: absolute;
+    top: 31%;
+    right: 5%;
+    display: none;
+    font-size: 35px;
+}
+
+/*Disabled property*/
+.disable{
+    display: none;
+}
+
+/*Enable property*/
+.enable{
+    display: block;
+}
+
+/*Novaterra logo position and styles*/
+#logo {
+    width: 15%;
+    height: auto;
+    position: absolute;
+    bottom: 5%;
+    right: 15%;
+    object-fit: contain;
+    transition: all 300ms;
+}
+
+/*Logo hover animation*/
+#logo:hover{
+    width: 17.5%;
+    transition: all 300ms;
+}
+
+/*Config title styles*/
+.config h1{
+    width: 100%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+/*Config labels position*/
+.config label{
+    margin-top: 1%;
+    width: 40%;
+}
+
+/*Config inputs styles*/
+.config input{
+    height: 5%;
+    border-radius: 25px;
+    text-align: right;
+    margin-top: 12px;
+    font-size: 20px;
+    width: 30%;
+}
+
+/*Config elements (label + input)*/
+.config .elem{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*Config accept button styles*/
+.config button{
+    all: unset;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 66.5%;
+    width: 10%;
+    transition: all 300ms;
+    transform-origin: center;
+}
+
+/*Config accept button hover animation*/
+.config button:hover{
+    transform: scale(1.5);
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+/*App title styles*/
+.app h1{
+    width: 100%;
+    margin-bottom: 5%;
+    text-align: center;
+    margin-right: 40px;
+    margin-top: 2%;
+    margin-bottom: 0;
+}
+
+/*App range styles*/
+.app h4{
+    text-align: center;
+    margin: 0;
+}
+
+/*App winner number styles*/
+.app h2{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+/*App options buttons container styles*/
+.app .buttons{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 7%;
+}
+
+/*App options buttons styles*/
+.app .buttons button{
+    all: unset;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
+    cursor: pointer;
+    width: 20%;
+    text-align: center;
+}
+
+/*App options buttons disabled styles*/
+.app .buttons button:disabled{
+    color: lightslategray;
+}
+
+/*Winner numbers position*/
+#win-list{
+    margin-bottom: 0;
+}
+
+/*Winner list position*/
+.position{
+    position: relative;
+}
+
+/*Winner numbers slider list styles*/
+.slider {
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 10%;
+}
+
+/*Slider buttons container styles*/
+.slider-buttons{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 51.5%;
+    position: absolute;
+    bottom: 1.5vh;
+    right: 6%;
+}
+
+/*Slider buttons styles*/
+.slider-buttons button{
+    all: unset;
+    font-size: 70px;
+    height: fit-content;
+    line-height: 20px;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+/*Slider title styles*/
+.slider h3 {
+    width: 50%;
+    margin: 0;
+    font-size: 32px;
+
+}
+
+/*Slider container styles*/
+.slider-list-wrapper {
+    overflow: hidden;
+    width: 50%;
+}
+
+/*Slider list styles*/
+.slider-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+/*Slider list elements styles*/
+.slider-list li {
+    text-align: center;
+    width: 50%;
+    min-width: 50%;
+    box-sizing: border-box;
+    font-size: 32px;
+}
+
+/*Generate color style*/
+#generate-bt{
+    color: gold;
+}
+
+/*Button disabled style*/
+button:disabled{
+    color: lightslategray;
+}
+
+/*Generate button disabled styles*/
+#generate-bt:disabled{
+    color: lightslategray;
+}
+
+/*Reactive configurations*/
+
+/*Laptop config*/
+@media (max-width: 1600px) {
+    .container {
+      width: 90%;
+    }
+    .title{
+        font-size: 3em;
+        text-align: center;
+    }
+}
+
+/*Tablets config*/
+@media (max-width: 1024px) {
+    .container {
+      width: 90%;
+    }
+    .title{
+        font-size: 2em;
+        text-align: center;
+    }
+    .sub-title{
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .config{
+        position: relative;
+        margin: 0 auto;
+        width: 80%;
+        right: 0;
+        font-size: 1.5em;
+    }
+    .app{
+        position: relative;
+        margin: 0 auto;
+        width: 80%;
+        right: 0;
+        font-size: 1.5em;
+    }
+    .app .buttons{
+        font-size: 1.5em;
+    }
+    .logo{
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+    #logo{
+        position: relative;
+        margin: 0 auto;
+        width: 50%;
+        height: auto;
+        right: 0;
+        margin-top: 10%;
+    }
+    #logo:hover{
+        width: 60%;
+        transition: all 300ms;
+    }
+    .slider{
+        flex-wrap: wrap;
+        margin-bottom: 2%;
+    }
+    .app .slider h3{
+        width: 100%;
+        font-size: 1em;
+        text-align: center;
+    }
+    .app .slider-list-wrapper{
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .slider-buttons{
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 5%;
+    }
+}
+
+/*Mobile config*/
+@media (max-width: 768px) {
+    .title{
+        font-size: 1.25em;
+        width: 100%;
+        text-align: center;
+    }
+    .sub-title{
+        text-align: center;
+        font-size: 1.25em;
+        -webkit-text-stroke: 0.5px white;
+    }
+    .config{
+        position: relative;
+
+    }
+    .app{
+        font-size: 0.75;
+    }
+    .app .buttons{
+        font-size: 0.75em;
+    }
+    .elem label{
+        width: 100%;
+    }
+    .config button{
+        margin-left: 75%;
+        margin-right: 0;
+    }
+}
+
+/*Low height config*/
+@media (max-height: 800px) {
+    html, body {
+        overflow-y: auto;
+        height: auto;
+    }
+
+    .app, .config, #logo{
+        position: static;
+        max-height: none;
+        overflow: visible;
+    }
+}

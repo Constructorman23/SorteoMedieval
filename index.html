@@ -1,53 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--General config-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Page title-->
     <title>Cena Medieval</title>
-    <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Css stylesheet link-->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!--Title-->
     <div class="title">
         <h1>Sorteo <span id="dif">II</span> Cena Medieval Solidaria</h1>
         <h2 class="sub-title">Las mil y una noches</h2>
     </div>
+    <!--Config Menu - here you can set upper and lower limits-->
     <div id="config" class="config">
         <h1>Configuracion</h1>
+        <!--Lower limit-->
         <div class="elem">
             <label name="inferior">Limite inferior: </label>
             <input max="99999999" min="0" value="0" id="inferior" type="number">
         </div>
+        <!--Upper limit-->
         <div class="elem">
             <label name="superior">Limite superior:</label>
             <input max="99999999" min="0" value="200" id="superior" type="number">
         </div>
+        <!--Accept button - redirects you to the app-->
         <button id="accept">Aceptar</button>
     </div>
+    <!--App Menu, here you can draw, restart, and see the previous numbers-->
     <div id="app" class="app">
         <h1>Numero sorteado: </h1>
         <h4 id="limits"></h4>
+        <!--Winner number - initial 0-->
         <h2 id="number">0000</h2>
         <div class="position">
+            <!--Slider for the previous numbers-->
             <div class="slider">
                 <h3>Numeros premiados:</h3>
                 <div class="slider-list-wrapper">
                     <ul id="win-list" class="slider-list">
                     </ul>
                 </div>
-            </div>        
+            </div>
+            <!--Buttons for the slider-->        
             <div class="slider-buttons">
                 <button id="prevBtn">&laquo;</button>
                 <button id="nextBtn">&raquo;</button>
             </div>
         </div>
+        <!--Buttons for the options-->
         <div class="buttons">
+            <!--Return tu config menu-->
             <button id="config-bt">Configurar</button>
+            <!--Draw a new number-->
             <button id="generate-bt">Sortear</button>
+            <!--Restart the numbers-->
             <button id="reboot-bt">Reiniciar</button>
         </div>
     </div>
-    <a class="logo" href="https://www.novaterra.org.es/"><img id="logo" src="Novaterra.png"></a>
-    <script src="app.js"></script>
+    <!--Novaterra logo-->
+    <a class="logo" href="https://www.novaterra.org.es/">
+        <img id="logo" src="images/Novaterra.png" alt="Logo de Novaterra">
+    </a>
+    <script src="/js/app.js"></script>
 </body>
 </html>
