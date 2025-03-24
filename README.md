@@ -21,8 +21,7 @@ Desarrollado por [JBDev23](https://github.com/JBDev23).
 
 📧 Contacto: [jordibarrachinam@gmail.com](mailto:jordibarrachinam@gmail.com)
 
-Medieval Dinner Raffle
-Web page for the raffle of the II Medieval Solidarity Dinner, benefiting the Novaterra Association.
+------------------------------------------------------------------------------
 
 #  Medieval Dinner Raffle  
 
