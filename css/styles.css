@@ -1,7 +1,7 @@
 /*General font*/
 @font-face { 
     font-family: 'MyFont';
-    src: url('/fonts/BerkshireSwash-Regular.ttf') format('truetype');
+    src: url('/SorteoMedieval/fonts/BerkshireSwash-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -9,14 +9,14 @@
 /*Title numbers font*/
 @font-face {
     font-family: 'MyFont2';
-    src: url('/fonts/bubbleboddyneue-regular.ttf') format('truetype');
+    src: url('/SorteoMedieval/fonts/bubbleboddyneue-regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 /*General body styles*/
 body{
-    background-image: url("/images/Fondo.jpg"); /*Background image*/
+    background-image: url("/SorteoMedieval/images/Fondo.jpg"); /*Background image*/
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
